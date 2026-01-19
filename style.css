@@ -122,8 +122,8 @@
 
  .badge {
    position: absolute;
-   top: 130px;
-   right: 110px;
+   top: 120px;
+   right: 100px;
    background: green;
    padding: 5px 12px;
    border-radius: 20px;
@@ -288,3 +288,64 @@
    border-radius: 20px;
    border: 2px solid red;
  }
+
+
+
+
+
+
+
+
+
+ /*Feature Episode*/
+
+
+ .episode{
+  border: 2px solid red;
+ }
+
+ .youtube-container{
+  display:  grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  
+ }
+
+.youtube {
+  background-color: var(--bg-choose);
+  width: 320px;
+  position: relative;
+  border-radius: 25px;
+  border: 2px solid red;
+ 
+}
+
+.thumbnail {
+  width: 100%;
+  display: block;
+  
+  
+}
+
+
+
+.play-btn {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+
+  
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  background: var(--gradient);
+  color: white;
+  font-size: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
