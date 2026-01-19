@@ -301,6 +301,10 @@
 
 
  .episode{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   border: 2px solid red;
  }
 
@@ -308,6 +312,7 @@
   display:  grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  justify-items: center;
   
  }
 
@@ -316,14 +321,15 @@
   width: 320px;
   position: relative;
   border-radius: 25px;
+  text-align: left;
   border: 2px solid red;
+  
  
 }
 
 .thumbnail {
   width: 100%;
-  display: block;
-  
+  display: block;  
   
 }
 
@@ -349,3 +355,7 @@
  
 }
 
+.video-time{
+  color: #00FF88;
+  text-align: center;
+}
