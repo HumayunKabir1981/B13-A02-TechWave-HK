@@ -56,8 +56,8 @@
    transition: 2s;
  }
 
- #logo-text:hover{
-font-size: 60px;
+ #logo-text:hover {
+   font-size: 60px;
    font-weight: bolder;
  }
 
@@ -86,7 +86,7 @@ font-size: 60px;
  .nav-links a {
    color: white;
    text-decoration: none;
-   
+
  }
 
 
@@ -134,13 +134,13 @@ font-size: 60px;
    display: flex;
    justify-content: center;
    align-items: center;
-  transition: 2s;
+   transition: 2s;
  }
 
-.mic:hover{
-  transform: scale(2.1);
-}
- 
+ .mic:hover {
+   transform: scale(2.1);
+ }
+
 
  .badge {
    position: absolute;
@@ -150,10 +150,10 @@ font-size: 60px;
    padding: 5px 12px;
    border-radius: 20px;
    padding: 10px 20px;
-  
+
  }
 
- .banner-text{
+ .banner-text {
    font-size: 60px;
    font-weight: bolder;
  }
@@ -217,10 +217,11 @@ font-size: 60px;
    color: #00FF88;
    transition: 2s;
  }
-.podcast-card h1:hover{
-  font-size: 60px;
-  color: #ff00aa;
-}
+
+ .podcast-card h1:hover {
+   font-size: 60px;
+   color: #ff00aa;
+ }
 
 
 
@@ -236,9 +237,11 @@ font-size: 60px;
 
  }
 
- .choose-font {
+ .choos-font {
    font-size: 48px;
    font-weight: bold;
+   margin-top: 50px;
+   margin-bottom: 30px;
  }
 
  .choose-card {
@@ -367,13 +370,15 @@ font-size: 60px;
  }
 
  .thumbnail {
+  background-color: var(--bg-choose);
    width: 100%;
    display: block;
-  transition: 2s;
+   transition: 2s;
  }
-.thumbnail:hover{
-  width: 120%;
-}
+
+ .thumbnail:hover {
+   width: 120%;
+ }
 
  .play-btn {
    position: absolute;
@@ -392,11 +397,11 @@ font-size: 60px;
    display: flex;
    align-items: center;
    justify-content: center;
-   
+
 
  }
 
- 
+
  .video-time {
    color: #00FF88;
    text-align: center;
@@ -433,6 +438,9 @@ font-size: 60px;
 
  }
 
+
+
+ /*footer section*/
  .footer-container {
    width: 100%;
    height: 412px;
@@ -465,7 +473,6 @@ font-size: 60px;
 
 
 
-
  /*responsive part*/
 
  @media screen and (max-width: 576px) {
@@ -492,7 +499,7 @@ font-size: 60px;
 
 
    .container {
-   
+
      width: 100%;
      height: auto;
      padding: 20px;
@@ -515,25 +522,25 @@ font-size: 60px;
 
    }
 
-   .banner-text{
+   .banner-text {
      font-size: 36px;
    }
 
    .podcast-card-container {
      grid-template-columns: repeat(2, 1fr);
      gap: 20px;
-     
+
    }
 
    .choose-card {
 
-     
+
      height: auto;
      grid-template-columns: 1fr;
-     
+
    }
 
-   
+
    .youtube-container {
      grid-template-columns: 1fr;
    }
