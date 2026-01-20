@@ -23,6 +23,17 @@
    height: 50px;
  }
 
+ .menu-btn {
+   background: var(--gradient);
+   padding: 10px 25px;
+   border-radius: 25px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+
+ }
 
  .btn {
    background: var(--gradient);
@@ -42,6 +53,12 @@
    font-size: 40px;
    font-weight: bold;
    color: white;
+   transition: 2s;
+ }
+
+ #logo-text:hover{
+font-size: 60px;
+   font-weight: bolder;
  }
 
  #logo-gradiant {
@@ -69,7 +86,9 @@
  .nav-links a {
    color: white;
    text-decoration: none;
+   
  }
+
 
  .banner {
    width: 100%;
@@ -80,12 +99,11 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 2px solid red;
-
  }
 
  .container {
-   width: 750px;
+   max-width: 750px;
+   width: 100%;
    height: 750px;
 
    display: flex;
@@ -93,7 +111,7 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   border: 2px solid red;
+
  }
 
  .inner-circle {
@@ -106,7 +124,7 @@
    justify-content: center;
    align-items: center;
    position: relative;
-   border: 2px solid red;
+
 
  }
 
@@ -116,9 +134,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 2px solid red;
-
+  transition: 2s;
  }
+
+.mic:hover{
+  transform: scale(2.1);
+}
+ 
 
  .badge {
    position: absolute;
@@ -128,16 +150,10 @@
    padding: 5px 12px;
    border-radius: 20px;
    padding: 10px 20px;
-   border
+  
  }
 
-
- .banner-text {
-   color: white;
-   border: 2px solid red;
- }
-
- .banner-text h1 {
+ .banner-text{
    font-size: 60px;
    font-weight: bolder;
  }
@@ -145,7 +161,7 @@
  .banner-btn {
    display: flex;
    justify-content: center;
-   border: 2px solid red;
+
  }
 
  .btn-msg {
@@ -182,7 +198,10 @@
  .podcast-text h1 {
    font-size: 49px;
    font-weight: bold;
+
  }
+
+
 
  .podcast-card-container {
    display: grid;
@@ -196,8 +215,12 @@
 
  .podcast-card h1 {
    color: #00FF88;
+   transition: 2s;
  }
-
+.podcast-card h1:hover{
+  font-size: 60px;
+  color: #ff00aa;
+}
 
 
 
@@ -219,11 +242,12 @@
  }
 
  .choose-card {
-   width: 1200px;
+   max-width: 1200px;
+   width: 100%;
    height: 783px;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   border: 2px solid red;
+
    gap: 20px;
 
 
@@ -238,7 +262,7 @@
    justify-content: center;
    gap: 10px;
    border-radius: 20px;
-   border: 2px solid red;
+
  }
 
  .choose-card-2 {
@@ -250,7 +274,7 @@
    justify-content: center;
    gap: 10px;
    border-radius: 20px;
-   border: 2px solid red;
+
  }
 
  .choose-card-3 {
@@ -262,7 +286,7 @@
    justify-content: center;
    gap: 10px;
    border-radius: 20px;
-   border: 2px solid red;
+
  }
 
  .choose-card-4 {
@@ -274,7 +298,7 @@
    justify-content: center;
    gap: 10px;
    border-radius: 20px;
-   border: 2px solid red;
+
  }
 
  .choose-card-5 {
@@ -286,7 +310,7 @@
    justify-content: center;
    gap: 10px;
    border-radius: 20px;
-   border: 2px solid red;
+
  }
 
 
@@ -298,113 +322,119 @@
 
 
  /*Feature Episode*/
-.feature{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
- .episode{
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border: 2px solid red;
+ .feature {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
 
- .youtube-container{
-  display:  grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  justify-items: center;
-  gap: 30px;
-  
+ .episode {
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
  }
-.youtube-header{
-  margin-top: 50px;
-  font-size: 48px;
-  font-weight: bold;
+
+ .youtube-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto;
+   justify-items: center;
+   gap: 30px;
+
+ }
+
+ .youtube-header {
+   margin-top: 50px;
+   font-size: 48px;
+   font-weight: bold;
+ }
+
+ .youtube {
+   background-color: var(--bg-choose);
+   width: 100%;
+   position: relative;
+   border-radius: 25px;
+   padding: 20px;
+   margin-top: 30px;
+   text-align: left;
+
+
+
+ }
+
+ .thumbnail {
+   width: 100%;
+   display: block;
+  transition: 2s;
+ }
+.thumbnail:hover{
+  width: 120%;
 }
-.youtube {
-  background-color: var(--bg-choose);
-  width: 320px;
-  position: relative;
-  border-radius: 25px;
-  padding: 20px;
-  margin-top: 30px;
-  text-align: left;
-  border: 2px solid red;
-  
+
+ .play-btn {
+   position: absolute;
+   top: 20%;
+   left: 40%;
+
+
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+
+   background: var(--gradient);
+   color: white;
+   font-size: 28px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+ }
+
  
-}
+ .video-time {
+   color: #00FF88;
+   text-align: center;
+ }
 
-.thumbnail {
-  width: 100%;
-  display: block;  
-  
-}
+ .thehost {
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 
+ }
 
+ .host-container {
+   display: flex;
 
-.play-btn {
-  position: absolute;
-  top: 20%;
-  left: 40%;
+ }
 
-  
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+ .icon {
+   display: flex;
+   gap: 20px;
+ }
 
-  background: var(--gradient);
-  color: white;
-  font-size: 28px;
+ .host-header {
+   margin-top: 50px;
+   font-size: 48px;
+   font-weight: bold;
+ }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-}
+ .host-description {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 
-.video-time{
-  color: #00FF88;
-  text-align: center;
-}
+ }
 
-.thehost{
-  max-width: 1200px;
-  display: flex;
- flex-direction: column;
-  align-items: center;
-  border: 2px solid red;
-}
-
-.host-container {
-  display: flex;
-
-}
-.icon{
-display: flex;
-gap: 20px;
-}
-
-.host-header{
-  margin-top: 50px;
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.host-description{
-  display: flex;
-  flex-direction: column;
-gap: 20px;
-
-}
-
-.footer-container{
-    width: 100%;
+ .footer-container {
+   width: 100%;
    height: 412px;
    background: url("./assets/footer-bg.png");
    background-repeat: no-repeat;
@@ -414,18 +444,121 @@ gap: 20px;
    justify-content: center;
    align-items: center;
    gap: 20px;
-   border: 2px solid red;
 
-}
-.fotter-icon{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  gap: 20px;
-}
-.icon-layout{
-  display: flex;
-  align-items: center;
-  gap: 15px;
 
-}
+ }
+
+ .fotter-icon {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 20px;
+ }
+
+ .icon-layout {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+
+ }
+
+
+
+
+
+ /*responsive part*/
+
+ @media screen and (max-width: 576px) {
+   nav {
+     justify-content: space-between;
+
+   }
+
+   .nav-links {
+     display: none;
+
+   }
+
+   .menu-btn {
+     width: 20px;
+     height: 20px;
+     background-image: url('./assets/hamburger-menu.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border: none;
+     text-indent: -9999px;
+
+   }
+
+
+   .container {
+   
+     width: 100%;
+     height: auto;
+     padding: 20px;
+   }
+
+   .inner-circle {
+     width: 350px;
+     height: 350px;
+   }
+
+   .mic {
+     width: 200px;
+     height: 200px;
+   }
+
+   .badge {
+     position: absolute;
+     top: 50px;
+     right: -10px;
+
+   }
+
+   .banner-text{
+     font-size: 36px;
+   }
+
+   .podcast-card-container {
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     
+   }
+
+   .choose-card {
+
+     
+     height: auto;
+     grid-template-columns: 1fr;
+     
+   }
+
+   
+   .youtube-container {
+     grid-template-columns: 1fr;
+   }
+
+   .youtube {
+     width: 100%;
+   }
+
+   .host-container {
+     flex-direction: column;
+     gap: 30px;
+     text-align: center;
+   }
+
+   .icon {
+     justify-content: center;
+   }
+
+   .fotter-icon {
+     grid-template-columns: repeat(2, 1fr);
+   }
+
+   .footer-container {
+     padding: 20px;
+     text-align: center;
+   }
+
+ }
